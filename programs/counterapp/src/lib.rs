@@ -33,20 +33,11 @@ pub struct CounterAccount {
     pub count: u64,
 }
 
-/*
-
-#[account]
-pub struct CounterAccount {
-    pub count: u64,
-}
-
-*/
-
 #[account]
 pub struct CompanyAccount {
-    pub companyId: u64,   // incremental id
-    pub createdTime: u64, // date when company is created
-    pub claimDate: u64 // date when user claim
+    pub company_id: u64,   // incremental id
+    pub created_time: u64, // date when company is created
+    pub claim_date: u64 // date when user claim
 }
 
 #[derive(Accounts)]
